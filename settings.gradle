@@ -1,0 +1,3 @@
+rootProject.name='bhttp-annotation-test'
+include ':app'
+include ':bhttp-annotation'
