@@ -10,6 +10,13 @@ import java.lang.annotation.Target;
  */
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.CLASS)
-public @interface Request {
+public @interface BRequest {
     String name() default "";
+
+    /**
+     * 支持的方法类型
+     *
+     * @return
+     */
+    String[] methods() default {};
 }
